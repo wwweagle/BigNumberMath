@@ -24,7 +24,7 @@ public class LargeTextView extends androidx.appcompat.widget.AppCompatTextView {
         super.onSizeChanged(w, h, oldw, oldh);
 
         // Set the text size to 80% of the width of the TextView
-        float tw = (float) (w * 0.2);
+        float tw = (float) (w * 0.25);
         float th = (float) (h * 0.9);
 
         setTextSize(TypedValue.COMPLEX_UNIT_PX, Math.min(tw, th));
